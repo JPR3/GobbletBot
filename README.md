@@ -33,7 +33,7 @@ In this example, White played one of their large pieces to the bottom right boar
 
 To play a turn, you will first be prompted to enter the starting position of the move. The board squares are numbered from left to right, top to bottom, starting at 0 and ending with 15. A starting position of 16 indicates a move from the pieces in your hand - you will then be prompted to specify the size of piece to play. Lastly, select an ending position for the piece. Remember you can cover smaller pieces!
 
-#The Algorithm
+# The Algorithm
 ## Scoring a Position
 Board positions are given a score based on simple parameters. For every row, column, and diagonal that has a white piece with no black pieces, the score is increased by 1 for each white piece in that line. Additionally, for each row, column, and diagonal that has a black price but no white pieces, the score is decreased by one for each black piece in that line. What this means is that a high score indicates a good position for White, while a low score is good for Black.
 
