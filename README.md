@@ -1,6 +1,6 @@
 # Overview
 
-This program was created to simulate a computer opponent for the game Gobblet by Blue Orange. It allows the user to specify the depth of the computer's search algorithm, as well as whether or not the computer goes first. The program also contains functionality for human-versus-human games (mostly for testing purposes) as well as computer-versus-computer games. There is even an option to run a tournament for all depth values between two numbers, with every depth playing as both black and white in every matchup, to see how the search depths as well as turn order can impact which side has the advantage.
+This program was created to simulate a computer opponent for the game Gobblet by Blue Orange. It uses an alpha-beta pruning search algorithm and allows the user to specify the depth of the search, allowing for play against opponents of different strengths. The program also contains functionality for human-versus-human games (mostly for testing purposes) as well as computer-versus-computer games. There is even an option to run a tournament for all depth values between two numbers, with every depth playing as both black and white in every matchup, to see how the search depths as well as turn order can impact which side has the advantage.
 
 ### Gobblet Rules
 
@@ -45,3 +45,7 @@ The application uses an alpha-beta pruning search algorithm to compute the best 
 Note that for these purposes, I determined a game to be a draw if after several thousand moves neither side was able to win.
 
 From my findings, computers with an even depth play more defensively and are more likely to draw the game. Conversely, computers with an odd depth play more offensively and are better at winning games. This is likely because with an even depth, the last move that the computer checks is the opponent’s move, meaning it is trying to create the worst position for the opponent. On the other hand, computers with an odd depth check their moves last, meaning that they optimize the best situation for themselves, leading to offensive play. When both players have equal depths, even depths lead to a draw while odd depths lead to a win for white. This has led me to conclude that the player going first in Gobblet had an advantage, but perfect defensive play can force a draw.
+
+# References
+
+[This video](https://www.youtube.com/watch?v=l-hh51ncgDI) was great for learning about alpha-beta pruning search algorithms
