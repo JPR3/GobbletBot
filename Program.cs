@@ -35,7 +35,7 @@ namespace GobbletBot
                 Console.WriteLine("\r\nTo play a turn, you first enter the starting position of the move.\r\n" +
                     "The board squares are numbered from left to right, top to bottom, starting at 0 and ending with 15.\r\n" +
                     "A starting position of 16 indicates a move from the pieces in your hand - you then specify the size of piece to play.\r\n" +
-                    "Lastly, select and ending position for the piece. Remember you can cover smaller pieces!\r\n" +
+                    "Lastly, select an ending position for the piece. Remember you can cover smaller pieces!\r\n" +
                     "The board consits of 16 2-digit spaces - '00' indicates an empty space on the board or in the hand.\r\n" +
                     "A filled space consists of a letter to show the piece's color and a number showing the size (e.g. W4, B2, etc.)\r\n" +
                     "Above the board is Black's hand, and below is White's.\r\n" +
